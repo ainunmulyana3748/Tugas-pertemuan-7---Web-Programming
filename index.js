@@ -6,9 +6,8 @@ const changeStyleCardArticle = document.querySelectorAll(".card");
 
 // mobile
 changeThemeMobile.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-
   //Untuk rubah icon
+  document.body.classList.toggle("dark-mode");
   const isDark = document.body.classList.contains("dark-mode");
   changeThemeMobile.setAttribute("name", isDark ? "sunny-sharp" : "moon-sharp");
 
@@ -30,16 +29,15 @@ changeThemeMobile.addEventListener("click", () => {
 
 // desktop
 changeThemeDesktop.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-
   //Untuk rubah icon
+  document.body.classList.toggle("dark-mode");
   const isDark = document.body.classList.contains("dark-mode");
   changeThemeDesktop.setAttribute(
     "name",
     isDark ? "sunny-sharp" : "moon-sharp"
   );
 
-  //   Untuk rubah background color section hero
+  //Untuk rubah theme hero section
   changeBackgroundHeroSection.style.backgroundColor = isDark
     ? "#6c757d"
     : "#f8d7da";
